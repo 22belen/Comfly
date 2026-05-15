@@ -1,0 +1,61 @@
+.card-destino {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card-destino:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-box {
+  position: relative;
+}
+
+.card-imagen {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-precio {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  border-radius: 99px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-titulo {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.card-texto {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card-boton {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 99px;
+  padding: 8px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.card-boton:hover {
+  background: #111;
+}
