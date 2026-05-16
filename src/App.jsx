@@ -12,6 +12,24 @@ const destinos = [
     precio: 1200,
   },
   {
+    img: "/Abisko, Suecia.jfif",
+    titulo: "Abisko, Suecia",
+    texto: "Paisajes árticos y auroras boreales al norte de Suecia.",
+    precio: 1800,
+  },
+  {
+    img: "/Jasna, Eslovakia.jfif",
+    titulo: "Jasna, Eslovakia",
+    texto: "Joya de los Alpes eslovacos, perfecta para el esquí.",
+    precio: 1500,
+  },
+  {
+    img: "/Moscú, Rusia.webp",
+    titulo: "Moscú, Rusia",
+    texto: "La capital rusa cargada de historia y arquitectura.",
+    precio: 1600,
+  },
+  {
     img: "/Cancún.jpg",
     titulo: "Cancún",
     texto: "Playas de arena blanca en el Caribe mexicano.",

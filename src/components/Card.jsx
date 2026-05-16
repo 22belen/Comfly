@@ -6,9 +6,9 @@ function Card({ destino }) {
           <img src={destino.img} className="card-imagen" alt={destino.titulo} />
           <span className="card-precio">✈ desde USD {destino.precio}</span>
         </div>
-        <div className="card-body d-flex flex-column">
-          <h5 className="card-titulo mt-2">{destino.titulo}</h5>
-          <p className="card-texto">{destino.texto}</p>
+        <div className="card-body d-flex flex-column text-center">
+          <h5 className="card-titulo mt-2 ">{destino.titulo}</h5>
+          <p className="card-texto ">{destino.texto}</p>
           <button className="card-boton mt-auto">Ver paquete →</button>
         </div>
       </div>
