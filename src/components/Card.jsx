@@ -1,6 +1,6 @@
 function Card({ destino }) {
   return (
-    <div className="col-4 mb-4">
+    <div className="col-3 mb-4">
       <div className="card-destino h-100">
         <div className="card-img-box">
           <img src={destino.img} className="card-imagen" alt={destino.titulo} />
