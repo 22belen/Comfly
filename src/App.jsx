@@ -1,5 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 
 const destinos = [
   {
@@ -60,13 +62,20 @@ const destinos = [
 
 function App() {
   return (
-    <div className="container mt-4">
-      <div className="row">
-        {destinos.map((destino, i) => (
-          <Card key={i} destino={destino} />
-        ))}
+    <>
+      <Navbar />
+      <Banner />
+      <h1 className="container text-center mt-4">
+        ¡Tu vuelo al mejor precio, tu destino te espera!
+      </h1>
+      <div className="container mt-4">
+        <div className="row">
+          {destinos.map((destino, i) => (
+            <Card key={i} destino={destino} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

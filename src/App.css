@@ -1,3 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #2b2a2a49;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: transparent !important;
+  padding: 12px 24px;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-text {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.banner {
+  position: relative;
+  height: 750px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 10;
+}
+
+.banner-search .form-control {
+  height: 48px;
+  font-size: 15px;
+  border: none;
+  box-shadow: none !important;
+}
+
+.banner-search .btn-buscar {
+  height: 48px;
+  padding: 0 28px;
+  background: #e91e8c;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.banner-search .btn-buscar:hover {
+  background: #c2166e;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+  font-size: 36px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.arrow-prev {
+  left: 16px;
+}
+.arrow-next {
+  right: 16px;
+}
+
+.search-box-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  position: relative;
+  z-index: 20;
+  padding: 0 24px 40px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  overflow: visible;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding-top: 20px;
+  position: relative;
+}
+
+.tab-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  top: -56px;
+  left: 0;
+  right: 0;
+}
+
+.tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tab-icon {
+  width: 54px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.tab-active .tab-icon {
+  background: #e91e8c;
+  border-color: #e91e8c;
+}
+
+.tab-active .tab-label {
+  color: white;
+}
+
+.form-body {
+  padding: 16px 20px 14px;
+}
+
+.field-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.field-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.field-wrap input,
+.field-wrap select {
+  width: 100%;
+  height: 42px;
+  padding: 0 30px 0 12px;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  font-size: 13px;
+  color: #333;
+  background: white !important;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.field-wrap input:focus,
+.field-wrap select:focus {
+  border-color: #e91e8c !important;
+  box-shadow: none !important;
+}
+
+.field-wrap > span {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.btn-buscar {
+  height: 42px;
+  padding: 0 28px;
+  background: #e91e8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn-buscar:hover {
+  background: #c2166e;
+}
+
+.opt-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.opt {
+  cursor: pointer;
+}
+
+.opt-active {
+  color: #e91e8c !important;
+  font-weight: 700;
+  border-bottom: 1.5px solid #e91e8c;
+  padding-bottom: 1px;
+}
+
+.opt-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .card-destino {
   border: none;
   border-radius: 16px;
